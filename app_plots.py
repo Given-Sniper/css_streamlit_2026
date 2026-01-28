@@ -11,7 +11,7 @@ st.write("This shows a table and a graph")
 
 st.header("Sample Data")
 
-data = pd.DataFrame({"x": [1, 2, 3], "y": [10, 20, 30]})
+data = pd.DataFrame({"x": [1, 2, 3, 4, 5], "y": [10, 20, 30, 40, 50]})
 
 # Display the data in the Streamlit app
 st.write(data)
@@ -20,4 +20,5 @@ st.write(data)
 fig = px.line(data, x="x", y="y", title="Simple Plotly Example")
 
 # Display the plot in the Streamlit app
+
 st.plotly_chart(fig)
